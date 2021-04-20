@@ -10,8 +10,21 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Detta är ett fragment"
+        android:text="Skriv ditt namn i rutan nedan:"
         android:layout_margin="20dp"
-        android:textColor="#fff"/>
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Namn"
+        android:id="@+id/my_edittext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:backgroundTint="#fff" />
 
 </FrameLayout>
