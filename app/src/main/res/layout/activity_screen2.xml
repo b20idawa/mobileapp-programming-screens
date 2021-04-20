@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9e47ff"
     tools:context=".screen2">
 
     <LinearLayout
@@ -18,7 +17,7 @@
 
         <fragment
             android:name="com.example.screens.NyFragment"
-            android:layout_width="240dp"
+            android:layout_width="match_parent"
             android:layout_height="240dp"
             android:tag="fragment_ny" />
     </LinearLayout>
