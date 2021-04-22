@@ -40,8 +40,8 @@ Button button = findViewById(R.id.start_button);
 import android.widget.Button;
 ```
 
-## Byte av startaktivitet
-I AndroidManifest.xml måste rätt aktivitet anges på rätt plats för att applikationen ska veta vilken aktivitet som ska presenteras först. Eftersom MainActivity ska starta först måste aktiviteterna byta plats. Därför anges MainActivity på den första aktiviteten och screen2 på den andra aktiviteten. På så sätt presenteras rätt aktivitet i rätt ordning.
+## Intent-filter
+I AndroidManifest.xml finns nu två stycken aktiviteter som kommer att presenteras i applikationen. Den aktivitet som heter MainActivity är den aktivitet som kommer att starta när applikationen öppnas. Därför anges ett intent-filter inuti activity android:name=".MainActivity" för att applikationen ska veta vilken aktivitet som ska öppnas först. Den andra aktiviteten får intenten angiven i funktionen setOnClickListener för button elementet i MainActivity.java.
 
 ```
 <activity android:name=".MainActivity">
@@ -52,11 +52,6 @@ I AndroidManifest.xml måste rätt aktivitet anges på rätt plats för att appl
             </intent-filter>
         </activity>
         <activity android:name=".screen2">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 ```
 
